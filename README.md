@@ -1,5 +1,5 @@
 # STO Contracts
-[![STELLERRO](https://app.stellerro.com/static/images/stellerrologo.png)](https://app.stellerro.com/static/images/stellerrologo.png)
+[![STELLERRO](https://bitjobproduploads.s3.amazonaws.com/stellerromenulogo1.png)](https://bitjobproduploads.s3.amazonaws.com/stellerromenulogo1.png)
 
 
 The STO contracts of [STELLERRO project](https://www.stellerro.com).  
