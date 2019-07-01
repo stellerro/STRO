@@ -252,22 +252,22 @@
   "metadata": "{\"compiler\":{\"version\":\"0.5.8+commit.23d335f2\"},\"language\":\"Solidity\",\"output\":{\"abi\":[{\"constant\":true,\"inputs\":[{\"name\":\"account\",\"type\":\"address\"}],\"name\":\"isKYCAdmin\",\"outputs\":[{\"name\":\"\",\"type\":\"bool\"}],\"payable\":false,\"stateMutability\":\"view\",\"type\":\"function\"},{\"constant\":false,\"inputs\":[],\"name\":\"renounceKYCAdmin\",\"outputs\":[],\"payable\":false,\"stateMutability\":\"nonpayable\",\"type\":\"function\"},{\"constant\":false,\"inputs\":[{\"name\":\"account\",\"type\":\"address\"}],\"name\":\"addKYClisted\",\"outputs\":[],\"payable\":false,\"stateMutability\":\"nonpayable\",\"type\":\"function\"},{\"constant\":false,\"inputs\":[],\"name\":\"renounceKYClisted\",\"outputs\":[],\"payable\":false,\"stateMutability\":\"nonpayable\",\"type\":\"function\"},{\"constant\":false,\"inputs\":[],\"name\":\"renounceOwnership\",\"outputs\":[],\"payable\":false,\"stateMutability\":\"nonpayable\",\"type\":\"function\"},{\"constant\":false,\"inputs\":[{\"name\":\"account\",\"type\":\"address\"}],\"name\":\"removeKYClisted\",\"outputs\":[],\"payable\":false,\"stateMutability\":\"nonpayable\",\"type\":\"function\"},{\"constant\":true,\"inputs\":[],\"name\":\"owner\",\"outputs\":[{\"name\":\"\",\"type\":\"address\"}],\"payable\":false,\"stateMutability\":\"view\",\"type\":\"function\"},{\"constant\":true,\"inputs\":[],\"name\":\"isOwner\",\"outputs\":[{\"name\":\"\",\"type\":\"bool\"}],\"payable\":false,\"stateMutability\":\"view\",\"type\":\"function\"},{\"constant\":false,\"inputs\":[{\"name\":\"account\",\"type\":\"address\"}],\"name\":\"addKYCAdmin\",\"outputs\":[],\"payable\":false,\"stateMutability\":\"nonpayable\",\"type\":\"function\"},{\"constant\":true,\"inputs\":[{\"name\":\"account\",\"type\":\"address\"}],\"name\":\"isKYClisted\",\"outputs\":[{\"name\":\"\",\"type\":\"bool\"}],\"payable\":false,\"stateMutability\":\"view\",\"type\":\"function\"},{\"constant\":true,\"inputs\":[{\"name\":\"investorAddress\",\"type\":\"address\"}],\"name\":\"isFreeInvestor\",\"outputs\":[{\"name\":\"\",\"type\":\"bool\"}],\"payable\":false,\"stateMutability\":\"view\",\"type\":\"function\"},{\"constant\":false,\"inputs\":[{\"name\":\"account\",\"type\":\"address\"}],\"name\":\"removeKYCAdmin\",\"outputs\":[],\"payable\":false,\"stateMutability\":\"nonpayable\",\"type\":\"function\"},{\"constant\":false,\"inputs\":[{\"name\":\"newOwner\",\"type\":\"address\"}],\"name\":\"transferOwnership\",\"outputs\":[],\"payable\":false,\"stateMutability\":\"nonpayable\",\"type\":\"function\"},{\"anonymous\":false,\"inputs\":[{\"indexed\":true,\"name\":\"account\",\"type\":\"address\"}],\"name\":\"KYClistedAdded\",\"type\":\"event\"},{\"anonymous\":false,\"inputs\":[{\"indexed\":true,\"name\":\"account\",\"type\":\"address\"}],\"name\":\"KYClistedRemoved\",\"type\":\"event\"},{\"anonymous\":false,\"inputs\":[{\"indexed\":true,\"name\":\"account\",\"type\":\"address\"}],\"name\":\"KYCAdminAdded\",\"type\":\"event\"},{\"anonymous\":false,\"inputs\":[{\"indexed\":true,\"name\":\"account\",\"type\":\"address\"}],\"name\":\"KYCAdminRemoved\",\"type\":\"event\"},{\"anonymous\":false,\"inputs\":[{\"indexed\":true,\"name\":\"previousOwner\",\"type\":\"address\"},{\"indexed\":true,\"name\":\"newOwner\",\"type\":\"address\"}],\"name\":\"OwnershipTransferred\",\"type\":\"event\"}],\"devdoc\":{\"methods\":{\"addKYCAdmin(address)\":{\"params\":{\"account\":\"the address to add\"}},\"isFreeInvestor(address)\":{\"params\":{\"investorAddress\":\"the investor address\"}},\"isOwner()\":{\"return\":\"true if `msg.sender` is the owner of the contract.\"},\"owner()\":{\"return\":\"the address of the owner.\"},\"removeKYCAdmin(address)\":{\"params\":{\"account\":\"the address to remove\"}},\"renounceOwnership()\":{\"details\":\"Allows the current owner to relinquish control of the contract.\"},\"transferOwnership(address)\":{\"details\":\"Allows the current owner to transfer control of the contract to a newOwner.\",\"params\":{\"newOwner\":\"The address to transfer ownership to.\"}}}},\"userdoc\":{\"methods\":{\"addKYCAdmin(address)\":{\"notice\":\"Add a kyc admin\"},\"isFreeInvestor(address)\":{\"notice\":\"Check if the investor is KYC approved and also accredited\"},\"removeKYCAdmin(address)\":{\"notice\":\"Remove a kyc admin\"},\"renounceOwnership()\":{\"notice\":\"Renouncing to ownership will leave the contract without an owner. It will not be possible to call the functions with the `onlyOwner` modifier anymore.\"}},\"notice\":\"contains roles for regular whitelisted token\"}},\"settings\":{\"compilationTarget\":{\"/C/Users/Noam/BCS/stellero/Dev/StellerroToken/contracts/WhiteListTokenAccess.sol\":\"WhiteListTokenAccess\"},\"evmVersion\":\"petersburg\",\"libraries\":{},\"optimizer\":{\"enabled\":true,\"runs\":200},\"remappings\":[]},\"sources\":{\"/C/Users/Noam/BCS/stellero/Dev/StellerroToken/contracts/KYCAdminRole.sol\":{\"keccak256\":\"0x54df1c508c3a0b5543577ddabc534d8495f36cca859ee5d2af86d95ee4eba0a4\",\"urls\":[\"bzzr://e29ba87224622ba0f71fa2c61cc3e939b5a1e0868726ff0cd9de1b5ad5d51b09\"]},\"/C/Users/Noam/BCS/stellero/Dev/StellerroToken/contracts/KYCListedRole.sol\":{\"keccak256\":\"0xeae32e53faf8fde88f4f3a9b8511ab6637f78163e434174dda1c35abf91870a1\",\"urls\":[\"bzzr://286385385f836232332110887adbc2e5ee3de805bd0302979ef64126c9ea76db\"]},\"/C/Users/Noam/BCS/stellero/Dev/StellerroToken/contracts/WhiteListTokenAccess.sol\":{\"keccak256\":\"0xe9a2cc3b9048b3d4c7c355f24cc8d64d45cd4afbd5d36ac17745dce941349374\",\"urls\":[\"bzzr://59ee6cff242914e223f2868f9c1124880009a67fcab723e9a1219754ad26c501\"]},\"openzeppelin-solidity/contracts/access/Roles.sol\":{\"keccak256\":\"0x659ba0f9a3392cd50a8a5fafaf5dfd8c6a0878f6a4613bceff4e90dceddcd865\",\"urls\":[\"bzzr://f704341d520fbc98716541f1b3f67737f0ee6e94adf072a66acb2bd25d593c2b\"]},\"openzeppelin-solidity/contracts/ownership/Ownable.sol\":{\"keccak256\":\"0x980de387a1a020a498f53d00f89fecebb12c949a17e8f160093c0303ede2b786\",\"urls\":[\"bzzr://08894efa2a557982070beda6a81a032407e70532d24bdafe80d39660c74904d9\"]}},\"version\":1}",
   "bytecode": "0x60806040819052600080546001600160a01b03191633178082556001600160a01b0316917f8be0079c531659141344cd1fd0a4f28419497f9722a3daafe3b4186f6b6457e0908290a36100573361005c60201b60201c565b610132565b6100748160016100ab60201b6105921790919060201c565b6040516001600160a01b038216907f6ef188d34b8fac4126790bd81059831348a92504fa4f99a97c9958a1749c63bc90600090a250565b6001600160a01b0381166100be57600080fd5b6100ce82826100fd60201b60201c565b156100d857600080fd5b6001600160a01b0316600090815260209190915260409020805460ff19166001179055565b60006001600160a01b03821661011257600080fd5b506001600160a01b03166000908152602091909152604090205460ff1690565b610652806101416000396000f3fe608060405234801561001057600080fd5b50600436106100cf5760003560e01c80638da5cb5b1161008c578063a2d5027a11610066578063a2d5027a146101c6578063c2282f77146101ec578063d92a6cf614610212578063f2fde38b14610238576100cf565b80638da5cb5b146101745780638f32d59b146101985780638fd60004146101a0576100cf565b806312f25343146100d45780631548dbc81461010e5780632c101922146101185780635b4e3f3d1461013e578063715018a6146101465780637696f4161461014e575b600080fd5b6100fa600480360360208110156100ea57600080fd5b50356001600160a01b031661025e565b604080519115158252519081900360200190f35b610116610277565b005b6101166004803603602081101561012e57600080fd5b50356001600160a01b0316610282565b6101166102a0565b6101166102a9565b6101166004803603602081101561016457600080fd5b50356001600160a01b0316610304565b61017c61031f565b604080516001600160a01b039092168252519081900360200190f35b6100fa61032e565b610116600480360360208110156101b657600080fd5b50356001600160a01b031661033f565b6100fa600480360360208110156101dc57600080fd5b50356001600160a01b0316610359565b6100fa6004803603602081101561020257600080fd5b50356001600160a01b031661036c565b6101166004803603602081101561022857600080fd5b50356001600160a01b0316610377565b6101166004803603602081101561024e57600080fd5b50356001600160a01b0316610391565b600061027160018363ffffffff6103ab16565b92915050565b610280336103e0565b565b61028b3361025e565b61029457600080fd5b61029d81610428565b50565b61028033610470565b6102b161032e565b6102ba57600080fd5b600080546040516001600160a01b03909116907f8be0079c531659141344cd1fd0a4f28419497f9722a3daafe3b4186f6b6457e0908390a3600080546001600160a01b0319169055565b61030d3361025e565b61031657600080fd5b61029d81610470565b6000546001600160a01b031690565b6000546001600160a01b0316331490565b61034761032e565b61035057600080fd5b61029d816104b8565b600061027160028363ffffffff6103ab16565b600061027182610359565b61037f61032e565b61038857600080fd5b61029d816104d3565b61039961032e565b6103a257600080fd5b61029d816104dc565b60006001600160a01b0382166103c057600080fd5b506001600160a01b03166000908152602091909152604090205460ff1690565b6103f160018263ffffffff61054a16565b6040516001600160a01b038216907fe989c3ea74e8447b86355ca10e7b910a5ea9931330517c33e3002727f5e95ee890600090a250565b61043960028263ffffffff61059216565b6040516001600160a01b038216907f5a85c934d044d4af54e45ef3efa70919b2301fe806a7b570e09d7e0f90a4445a90600090a250565b61048160028263ffffffff61054a16565b6040516001600160a01b038216907fbc6a411073357cff5bee0c71e7722c8fd47b5a40591adcedeaac84bd10c0736890600090a250565b6104c13361025e565b6104ca57600080fd5b61029d816105de565b61029d816103e0565b6001600160a01b0381166104ef57600080fd5b600080546040516001600160a01b03808516939216917f8be0079c531659141344cd1fd0a4f28419497f9722a3daafe3b4186f6b6457e091a3600080546001600160a01b0319166001600160a01b0392909216919091179055565b6001600160a01b03811661055d57600080fd5b61056782826103ab565b61057057600080fd5b6001600160a01b0316600090815260209190915260409020805460ff19169055565b6001600160a01b0381166105a557600080fd5b6105af82826103ab565b156105b957600080fd5b6001600160a01b0316600090815260209190915260409020805460ff19166001179055565b6105ef60018263ffffffff61059216565b6040516001600160a01b038216907f6ef188d34b8fac4126790bd81059831348a92504fa4f99a97c9958a1749c63bc90600090a25056fea165627a7a72305820f909df44b409fa61ba9c1cc2aa3058e63c55959720c8893a912cb6fe161ee3a50029",
   "deployedBytecode": "0x608060405234801561001057600080fd5b50600436106100cf5760003560e01c80638da5cb5b1161008c578063a2d5027a11610066578063a2d5027a146101c6578063c2282f77146101ec578063d92a6cf614610212578063f2fde38b14610238576100cf565b80638da5cb5b146101745780638f32d59b146101985780638fd60004146101a0576100cf565b806312f25343146100d45780631548dbc81461010e5780632c101922146101185780635b4e3f3d1461013e578063715018a6146101465780637696f4161461014e575b600080fd5b6100fa600480360360208110156100ea57600080fd5b50356001600160a01b031661025e565b604080519115158252519081900360200190f35b610116610277565b005b6101166004803603602081101561012e57600080fd5b50356001600160a01b0316610282565b6101166102a0565b6101166102a9565b6101166004803603602081101561016457600080fd5b50356001600160a01b0316610304565b61017c61031f565b604080516001600160a01b039092168252519081900360200190f35b6100fa61032e565b610116600480360360208110156101b657600080fd5b50356001600160a01b031661033f565b6100fa600480360360208110156101dc57600080fd5b50356001600160a01b0316610359565b6100fa6004803603602081101561020257600080fd5b50356001600160a01b031661036c565b6101166004803603602081101561022857600080fd5b50356001600160a01b0316610377565b6101166004803603602081101561024e57600080fd5b50356001600160a01b0316610391565b600061027160018363ffffffff6103ab16565b92915050565b610280336103e0565b565b61028b3361025e565b61029457600080fd5b61029d81610428565b50565b61028033610470565b6102b161032e565b6102ba57600080fd5b600080546040516001600160a01b03909116907f8be0079c531659141344cd1fd0a4f28419497f9722a3daafe3b4186f6b6457e0908390a3600080546001600160a01b0319169055565b61030d3361025e565b61031657600080fd5b61029d81610470565b6000546001600160a01b031690565b6000546001600160a01b0316331490565b61034761032e565b61035057600080fd5b61029d816104b8565b600061027160028363ffffffff6103ab16565b600061027182610359565b61037f61032e565b61038857600080fd5b61029d816104d3565b61039961032e565b6103a257600080fd5b61029d816104dc565b60006001600160a01b0382166103c057600080fd5b506001600160a01b03166000908152602091909152604090205460ff1690565b6103f160018263ffffffff61054a16565b6040516001600160a01b038216907fe989c3ea74e8447b86355ca10e7b910a5ea9931330517c33e3002727f5e95ee890600090a250565b61043960028263ffffffff61059216565b6040516001600160a01b038216907f5a85c934d044d4af54e45ef3efa70919b2301fe806a7b570e09d7e0f90a4445a90600090a250565b61048160028263ffffffff61054a16565b6040516001600160a01b038216907fbc6a411073357cff5bee0c71e7722c8fd47b5a40591adcedeaac84bd10c0736890600090a250565b6104c13361025e565b6104ca57600080fd5b61029d816105de565b61029d816103e0565b6001600160a01b0381166104ef57600080fd5b600080546040516001600160a01b03808516939216917f8be0079c531659141344cd1fd0a4f28419497f9722a3daafe3b4186f6b6457e091a3600080546001600160a01b0319166001600160a01b0392909216919091179055565b6001600160a01b03811661055d57600080fd5b61056782826103ab565b61057057600080fd5b6001600160a01b0316600090815260209190915260409020805460ff19169055565b6001600160a01b0381166105a557600080fd5b6105af82826103ab565b156105b957600080fd5b6001600160a01b0316600090815260209190915260409020805460ff19166001179055565b6105ef60018263ffffffff61059216565b6040516001600160a01b038216907f6ef188d34b8fac4126790bd81059831348a92504fa4f99a97c9958a1749c63bc90600090a25056fea165627a7a72305820f909df44b409fa61ba9c1cc2aa3058e63c55959720c8893a912cb6fe161ee3a50029",
-  "sourceMap": "176:750:5:-;;;;;515:6:11;:19;;-1:-1:-1;;;;;;515:19:11;524:10;515:19;;;;-1:-1:-1;;;;;582:6:11;;549:40;;515:6;;549:40;448:24:0;461:10;448:12;;;:24;;:::i;:::-;176:750:5;;997:128:0;1056:23;1071:7;1056:10;:14;;;;;;:23;;;;:::i;:::-;1095:22;;-1:-1:-1;;;;;1095:22:0;;;;;;;;997:128;:::o;259:181:8:-;-1:-1:-1;;;;;335:21:8;;327:30;;;;;;376:18;380:4;386:7;376:3;;;:18;;:::i;:::-;375:19;367:28;;;;;;-1:-1:-1;;;;;406:20:8;:11;:20;;;;;;;;;;;:27;;-1:-1:-1;;406:27:8;429:4;406:27;;;259:181::o;786:162::-;858:4;-1:-1:-1;;;;;882:21:8;;874:30;;;;;;-1:-1:-1;;;;;;921:20:8;:11;:20;;;;;;;;;;;;;;;786:162::o;176:750:5:-;;;;;;;",
-  "deployedSourceMap": "176:750:5:-;;;;8:9:-1;5:2;;;30:1;27;20:12;5:2;176:750:5;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;582:113:0;;;;;;13:2:-1;8:3;5:11;2:2;;;29:1;26;19:12;2:2;-1:-1;582:113:0;-1:-1:-1;;;;;582:113:0;;:::i;:::-;;;;;;;;;;;;;;;;;;809:81;;;:::i;:::-;;800:100:1;;;;;;13:2:-1;8:3;5:11;2:2;;;29:1;26;19:12;2:2;-1:-1;800:100:1;-1:-1:-1;;;;;800:100:1;;:::i;1022:83::-;;;:::i;1347:137:11:-;;;:::i;908:106:1:-;;;;;;13:2:-1;8:3;5:11;2:2;;;29:1;26;19:12;2:2;-1:-1;908:106:1;-1:-1:-1;;;;;908:106:1;;:::i;659:77:11:-;;;:::i;:::-;;;;-1:-1:-1;;;;;659:77:11;;;;;;;;;;;;;;979:90;;;:::i;308:93:5:-;;;;;;13:2:-1;8:3;5:11;2:2;;;29:1;26;19:12;2:2;-1:-1;308:93:5;-1:-1:-1;;;;;308:93:5;;:::i;677:115:1:-;;;;;;13:2:-1;8:3;5:11;2:2;;;29:1;26;19:12;2:2;-1:-1;677:115:1;-1:-1:-1;;;;;677:115:1;;:::i;710:214:5:-;;;;;;13:2:-1;8:3;5:11;2:2;;;29:1;26;19:12;2:2;-1:-1;710:214:5;-1:-1:-1;;;;;710:214:5;;:::i;483:99::-;;;;;;13:2:-1;8:3;5:11;2:2;;;29:1;26;19:12;2:2;-1:-1;483:99:5;-1:-1:-1;;;;;483:99:5;;:::i;1655:107:11:-;;;;;;13:2:-1;8:3;5:11;2:2;;;29:1;26;19:12;2:2;-1:-1;1655:107:11;-1:-1:-1;;;;;1655:107:11;;:::i;582:113:0:-;640:4;664:23;:10;679:7;664:23;:14;:23;:::i;:::-;657:30;582:113;-1:-1:-1;;582:113:0:o;809:81::-;855:27;871:10;855:15;:27::i;:::-;809:81::o;800:100:1:-;531:22:0;542:10;531;:22::i;:::-;523:31;;;;;;870:22:1;884:7;870:13;:22::i;:::-;800:100;:::o;1022:83::-;1069:28;1086:10;1069:16;:28::i;1347:137:11:-;863:9;:7;:9::i;:::-;855:18;;;;;;1445:1;1429:6;;1408:40;;-1:-1:-1;;;;;1429:6:11;;;;1408:40;;1445:1;;1408:40;1475:1;1458:19;;-1:-1:-1;;;;;;1458:19:11;;;1347:137::o;908:106:1:-;531:22:0;542:10;531;:22::i;:::-;523:31;;;;;;981:25:1;998:7;981:16;:25::i;659:77:11:-;697:7;723:6;-1:-1:-1;;;;;723:6:11;659:77;:::o;979:90::-;1019:4;1056:6;-1:-1:-1;;;;;1056:6:11;1042:10;:20;;979:90::o;308:93:5:-;863:9:11;:7;:9::i;:::-;855:18;;;;;;370:26:5;388:7;370:17;:26::i;677:115:1:-;736:4;760:24;:11;776:7;760:24;:15;:24;:::i;710:214:5:-;780:4;799:28;811:15;799:11;:28::i;483:99::-;863:9:11;:7;:9::i;:::-;855:18;;;;;;548:29:5;569:7;548:20;:29::i;1655:107:11:-;863:9;:7;:9::i;:::-;855:18;;;;;;1727:28;1746:8;1727:18;:28::i;786:162:8:-;858:4;-1:-1:-1;;;;;882:21:8;;874:30;;;;;;-1:-1:-1;;;;;;921:20:8;:11;:20;;;;;;;;;;;;;;;786:162::o;1133:136:0:-;1195:26;:10;1213:7;1195:26;:17;:26;:::i;:::-;1237:24;;-1:-1:-1;;;;;1237:24:0;;;;;;;;1133:136;:::o;1113:131:1:-;1173:24;:11;1189:7;1173:24;:15;:24;:::i;:::-;1213:23;;-1:-1:-1;;;;;1213:23:1;;;;;;;;1113:131;:::o;1252:139::-;1315:27;:11;1334:7;1315:27;:18;:27;:::i;:::-;1358:25;;-1:-1:-1;;;;;1358:25:1;;;;;;;;1252:139;:::o;703:98:0:-;531:22;542:10;531;:22::i;:::-;523:31;;;;;;772:21;785:7;772:12;:21::i;898:91::-;957:24;973:7;957:15;:24::i;1906:183:11:-;-1:-1:-1;;;;;1979:22:11;;1971:31;;;;;;2038:6;;;2017:38;;-1:-1:-1;;;;;2017:38:11;;;;2038:6;;;2017:38;;;2065:6;:17;;-1:-1:-1;;;;;;2065:17:11;-1:-1:-1;;;;;2065:17:11;;;;;;;;;;1906:183::o;514:184:8:-;-1:-1:-1;;;;;593:21:8;;585:30;;;;;;633:18;637:4;643:7;633:3;:18::i;:::-;625:27;;;;;;-1:-1:-1;;;;;663:20:8;686:5;663:20;;;;;;;;;;;:28;;-1:-1:-1;;663:28:8;;;514:184::o;259:181::-;-1:-1:-1;;;;;335:21:8;;327:30;;;;;;376:18;380:4;386:7;376:3;:18::i;:::-;375:19;367:28;;;;;;-1:-1:-1;;;;;406:20:8;:11;:20;;;;;;;;;;;:27;;-1:-1:-1;;406:27:8;429:4;406:27;;;259:181::o;997:128:0:-;1056:23;:10;1071:7;1056:23;:14;:23;:::i;:::-;1095:22;;-1:-1:-1;;;;;1095:22:0;;;;;;;;997:128;:::o",
+  "sourceMap": "176:750:5:-;;;;;515:6:13;:19;;-1:-1:-1;;;;;;515:19:13;524:10;515:19;;;;-1:-1:-1;;;;;582:6:13;;549:40;;515:6;;549:40;448:24:0;461:10;448:12;;;:24;;:::i;:::-;176:750:5;;997:128:0;1056:23;1071:7;1056:10;:14;;;;;;:23;;;;:::i;:::-;1095:22;;-1:-1:-1;;;;;1095:22:0;;;;;;;;997:128;:::o;259:181:8:-;-1:-1:-1;;;;;335:21:8;;327:30;;;;;;376:18;380:4;386:7;376:3;;;:18;;:::i;:::-;375:19;367:28;;;;;;-1:-1:-1;;;;;406:20:8;:11;:20;;;;;;;;;;;:27;;-1:-1:-1;;406:27:8;429:4;406:27;;;259:181::o;786:162::-;858:4;-1:-1:-1;;;;;882:21:8;;874:30;;;;;;-1:-1:-1;;;;;;921:20:8;:11;:20;;;;;;;;;;;;;;;786:162::o;176:750:5:-;;;;;;;",
+  "deployedSourceMap": "176:750:5:-;;;;8:9:-1;5:2;;;30:1;27;20:12;5:2;176:750:5;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;582:113:0;;;;;;13:2:-1;8:3;5:11;2:2;;;29:1;26;19:12;2:2;-1:-1;582:113:0;-1:-1:-1;;;;;582:113:0;;:::i;:::-;;;;;;;;;;;;;;;;;;809:81;;;:::i;:::-;;800:100:1;;;;;;13:2:-1;8:3;5:11;2:2;;;29:1;26;19:12;2:2;-1:-1;800:100:1;-1:-1:-1;;;;;800:100:1;;:::i;1022:83::-;;;:::i;1347:137:13:-;;;:::i;908:106:1:-;;;;;;13:2:-1;8:3;5:11;2:2;;;29:1;26;19:12;2:2;-1:-1;908:106:1;-1:-1:-1;;;;;908:106:1;;:::i;659:77:13:-;;;:::i;:::-;;;;-1:-1:-1;;;;;659:77:13;;;;;;;;;;;;;;979:90;;;:::i;308:93:5:-;;;;;;13:2:-1;8:3;5:11;2:2;;;29:1;26;19:12;2:2;-1:-1;308:93:5;-1:-1:-1;;;;;308:93:5;;:::i;677:115:1:-;;;;;;13:2:-1;8:3;5:11;2:2;;;29:1;26;19:12;2:2;-1:-1;677:115:1;-1:-1:-1;;;;;677:115:1;;:::i;710:214:5:-;;;;;;13:2:-1;8:3;5:11;2:2;;;29:1;26;19:12;2:2;-1:-1;710:214:5;-1:-1:-1;;;;;710:214:5;;:::i;483:99::-;;;;;;13:2:-1;8:3;5:11;2:2;;;29:1;26;19:12;2:2;-1:-1;483:99:5;-1:-1:-1;;;;;483:99:5;;:::i;1655:107:13:-;;;;;;13:2:-1;8:3;5:11;2:2;;;29:1;26;19:12;2:2;-1:-1;1655:107:13;-1:-1:-1;;;;;1655:107:13;;:::i;582:113:0:-;640:4;664:23;:10;679:7;664:23;:14;:23;:::i;:::-;657:30;582:113;-1:-1:-1;;582:113:0:o;809:81::-;855:27;871:10;855:15;:27::i;:::-;809:81::o;800:100:1:-;531:22:0;542:10;531;:22::i;:::-;523:31;;;;;;870:22:1;884:7;870:13;:22::i;:::-;800:100;:::o;1022:83::-;1069:28;1086:10;1069:16;:28::i;1347:137:13:-;863:9;:7;:9::i;:::-;855:18;;;;;;1445:1;1429:6;;1408:40;;-1:-1:-1;;;;;1429:6:13;;;;1408:40;;1445:1;;1408:40;1475:1;1458:19;;-1:-1:-1;;;;;;1458:19:13;;;1347:137::o;908:106:1:-;531:22:0;542:10;531;:22::i;:::-;523:31;;;;;;981:25:1;998:7;981:16;:25::i;659:77:13:-;697:7;723:6;-1:-1:-1;;;;;723:6:13;659:77;:::o;979:90::-;1019:4;1056:6;-1:-1:-1;;;;;1056:6:13;1042:10;:20;;979:90::o;308:93:5:-;863:9:13;:7;:9::i;:::-;855:18;;;;;;370:26:5;388:7;370:17;:26::i;677:115:1:-;736:4;760:24;:11;776:7;760:24;:15;:24;:::i;710:214:5:-;780:4;799:28;811:15;799:11;:28::i;483:99::-;863:9:13;:7;:9::i;:::-;855:18;;;;;;548:29:5;569:7;548:20;:29::i;1655:107:13:-;863:9;:7;:9::i;:::-;855:18;;;;;;1727:28;1746:8;1727:18;:28::i;786:162:8:-;858:4;-1:-1:-1;;;;;882:21:8;;874:30;;;;;;-1:-1:-1;;;;;;921:20:8;:11;:20;;;;;;;;;;;;;;;786:162::o;1133:136:0:-;1195:26;:10;1213:7;1195:26;:17;:26;:::i;:::-;1237:24;;-1:-1:-1;;;;;1237:24:0;;;;;;;;1133:136;:::o;1113:131:1:-;1173:24;:11;1189:7;1173:24;:15;:24;:::i;:::-;1213:23;;-1:-1:-1;;;;;1213:23:1;;;;;;;;1113:131;:::o;1252:139::-;1315:27;:11;1334:7;1315:27;:18;:27;:::i;:::-;1358:25;;-1:-1:-1;;;;;1358:25:1;;;;;;;;1252:139;:::o;703:98:0:-;531:22;542:10;531;:22::i;:::-;523:31;;;;;;772:21;785:7;772:12;:21::i;898:91::-;957:24;973:7;957:15;:24::i;1906:183:13:-;-1:-1:-1;;;;;1979:22:13;;1971:31;;;;;;2038:6;;;2017:38;;-1:-1:-1;;;;;2017:38:13;;;;2038:6;;;2017:38;;;2065:6;:17;;-1:-1:-1;;;;;;2065:17:13;-1:-1:-1;;;;;2065:17:13;;;;;;;;;;1906:183::o;514:184:8:-;-1:-1:-1;;;;;593:21:8;;585:30;;;;;;633:18;637:4;643:7;633:3;:18::i;:::-;625:27;;;;;;-1:-1:-1;;;;;663:20:8;686:5;663:20;;;;;;;;;;;:28;;-1:-1:-1;;663:28:8;;;514:184::o;259:181::-;-1:-1:-1;;;;;335:21:8;;327:30;;;;;;376:18;380:4;386:7;376:3;:18::i;:::-;375:19;367:28;;;;;;-1:-1:-1;;;;;406:20:8;:11;:20;;;;;;;;;;;:27;;-1:-1:-1;;406:27:8;429:4;406:27;;;259:181::o;997:128:0:-;1056:23;:10;1071:7;1056:23;:14;:23;:::i;:::-;1095:22;;-1:-1:-1;;;;;1095:22:0;;;;;;;;997:128;:::o",
   "source": "pragma solidity ^0.5.7;\n\nimport \"openzeppelin-solidity/contracts/ownership/Ownable.sol\";\nimport \"./KYCListedRole.sol\";\n\n/**\n * contains roles for regular whitelisted token\n */\ncontract WhiteListTokenAccess is Ownable, KYCListedRole{\n\n  /**\n   * Add a kyc admin\n   * @param account the address to add\n   */\n  function addKYCAdmin(address account) public onlyOwner{\n      super.addKYCAdmin(account);\n  }\n\n  /**\n   * Remove a kyc admin\n   * @param account the address to remove\n   */\n  function removeKYCAdmin(address account) public onlyOwner{\n      super.removeKYCAdmin(account);\n  }\n\n  /**\n   * Check if the investor is KYC approved and also accredited\n   * @param investorAddress the investor address\n   */\n  function isFreeInvestor(address investorAddress) public view returns (bool) {\n    return isKYClisted(investorAddress);\n    /* if(!isKYClisted(_investorAddress)){\n        return false;\n    }\n\n    return true; */\n  }\n}\n",
   "sourcePath": "C:\\Users\\Noam\\BCS\\stellero\\Dev\\StellerroToken\\contracts\\WhiteListTokenAccess.sol",
   "ast": {
     "absolutePath": "/C/Users/Noam/BCS/stellero/Dev/StellerroToken/contracts/WhiteListTokenAccess.sol",
     "exportedSymbols": {
       "WhiteListTokenAccess": [
-        651
+        656
       ]
     },
-    "id": 652,
+    "id": 657,
     "nodeType": "SourceUnit",
     "nodes": [
       {
-        "id": 604,
+        "id": 609,
         "literals": [
           "solidity",
           "^",
@@ -280,10 +280,10 @@
       {
         "absolutePath": "openzeppelin-solidity/contracts/ownership/Ownable.sol",
         "file": "openzeppelin-solidity/contracts/ownership/Ownable.sol",
-        "id": 605,
+        "id": 610,
         "nodeType": "ImportDirective",
-        "scope": 652,
-        "sourceUnit": 1171,
+        "scope": 657,
+        "sourceUnit": 1362,
         "src": "25:63:5",
         "symbolAliases": [],
         "unitAlias": ""
@@ -291,9 +291,9 @@
       {
         "absolutePath": "/C/Users/Noam/BCS/stellero/Dev/StellerroToken/contracts/KYCListedRole.sol",
         "file": "./KYCListedRole.sol",
-        "id": 606,
+        "id": 611,
         "nodeType": "ImportDirective",
-        "scope": 652,
+        "scope": 657,
         "sourceUnit": 222,
         "src": "89:29:5",
         "symbolAliases": [],
@@ -305,17 +305,17 @@
             "arguments": null,
             "baseName": {
               "contractScope": null,
-              "id": 607,
+              "id": 612,
               "name": "Ownable",
               "nodeType": "UserDefinedTypeName",
-              "referencedDeclaration": 1170,
+              "referencedDeclaration": 1361,
               "src": "209:7:5",
               "typeDescriptions": {
-                "typeIdentifier": "t_contract$_Ownable_$1170",
+                "typeIdentifier": "t_contract$_Ownable_$1361",
                 "typeString": "contract Ownable"
               }
             },
-            "id": 608,
+            "id": 613,
             "nodeType": "InheritanceSpecifier",
             "src": "209:7:5"
           },
@@ -323,7 +323,7 @@
             "arguments": null,
             "baseName": {
               "contractScope": null,
-              "id": 609,
+              "id": 614,
               "name": "KYCListedRole",
               "nodeType": "UserDefinedTypeName",
               "referencedDeclaration": 221,
@@ -333,7 +333,7 @@
                 "typeString": "contract KYCListedRole"
               }
             },
-            "id": 610,
+            "id": 615,
             "nodeType": "InheritanceSpecifier",
             "src": "218:13:5"
           }
@@ -341,24 +341,24 @@
         "contractDependencies": [
           112,
           221,
-          1170
+          1361
         ],
         "contractKind": "contract",
         "documentation": "contains roles for regular whitelisted token",
         "fullyImplemented": true,
-        "id": 651,
+        "id": 656,
         "linearizedBaseContracts": [
-          651,
+          656,
           221,
           112,
-          1170
+          1361
         ],
         "name": "WhiteListTokenAccess",
         "nodeType": "ContractDefinition",
         "nodes": [
           {
             "body": {
-              "id": 623,
+              "id": 628,
               "nodeType": "Block",
               "src": "362:39:5",
               "statements": [
@@ -368,11 +368,11 @@
                     "arguments": [
                       {
                         "argumentTypes": null,
-                        "id": 620,
+                        "id": 625,
                         "name": "account",
                         "nodeType": "Identifier",
                         "overloadedDeclarations": [],
-                        "referencedDeclaration": 612,
+                        "referencedDeclaration": 617,
                         "src": "388:7:5",
                         "typeDescriptions": {
                           "typeIdentifier": "t_address",
@@ -389,18 +389,18 @@
                       ],
                       "expression": {
                         "argumentTypes": null,
-                        "id": 617,
+                        "id": 622,
                         "name": "super",
                         "nodeType": "Identifier",
                         "overloadedDeclarations": [],
-                        "referencedDeclaration": 1901,
+                        "referencedDeclaration": 2096,
                         "src": "370:5:5",
                         "typeDescriptions": {
-                          "typeIdentifier": "t_super$_WhiteListTokenAccess_$651",
+                          "typeIdentifier": "t_super$_WhiteListTokenAccess_$656",
                           "typeString": "contract super WhiteListTokenAccess"
                         }
                       },
-                      "id": 619,
+                      "id": 624,
                       "isConstant": false,
                       "isLValue": false,
                       "isPure": false,
@@ -414,7 +414,7 @@
                         "typeString": "function (address)"
                       }
                     },
-                    "id": 621,
+                    "id": 626,
                     "isConstant": false,
                     "isLValue": false,
                     "isPure": false,
@@ -428,27 +428,27 @@
                       "typeString": "tuple()"
                     }
                   },
-                  "id": 622,
+                  "id": 627,
                   "nodeType": "ExpressionStatement",
                   "src": "370:26:5"
                 }
               ]
             },
             "documentation": "Add a kyc admin\n@param account the address to add",
-            "id": 624,
+            "id": 629,
             "implemented": true,
             "kind": "function",
             "modifiers": [
               {
                 "arguments": null,
-                "id": 615,
+                "id": 620,
                 "modifierName": {
                   "argumentTypes": null,
-                  "id": 614,
+                  "id": 619,
                   "name": "onlyOwner",
                   "nodeType": "Identifier",
                   "overloadedDeclarations": [],
-                  "referencedDeclaration": 1104,
+                  "referencedDeclaration": 1295,
                   "src": "353:9:5",
                   "typeDescriptions": {
                     "typeIdentifier": "t_modifier$__$",
@@ -462,15 +462,15 @@
             "name": "addKYCAdmin",
             "nodeType": "FunctionDefinition",
             "parameters": {
-              "id": 613,
+              "id": 618,
               "nodeType": "ParameterList",
               "parameters": [
                 {
                   "constant": false,
-                  "id": 612,
+                  "id": 617,
                   "name": "account",
                   "nodeType": "VariableDeclaration",
-                  "scope": 624,
+                  "scope": 629,
                   "src": "329:15:5",
                   "stateVariable": false,
                   "storageLocation": "default",
@@ -479,7 +479,7 @@
                     "typeString": "address"
                   },
                   "typeName": {
-                    "id": 611,
+                    "id": 616,
                     "name": "address",
                     "nodeType": "ElementaryTypeName",
                     "src": "329:7:5",
@@ -496,12 +496,12 @@
               "src": "328:17:5"
             },
             "returnParameters": {
-              "id": 616,
+              "id": 621,
               "nodeType": "ParameterList",
               "parameters": [],
               "src": "362:0:5"
             },
-            "scope": 651,
+            "scope": 656,
             "src": "308:93:5",
             "stateMutability": "nonpayable",
             "superFunction": 60,
@@ -509,7 +509,7 @@
           },
           {
             "body": {
-              "id": 637,
+              "id": 642,
               "nodeType": "Block",
               "src": "540:42:5",
               "statements": [
@@ -519,11 +519,11 @@
                     "arguments": [
                       {
                         "argumentTypes": null,
-                        "id": 634,
+                        "id": 639,
                         "name": "account",
                         "nodeType": "Identifier",
                         "overloadedDeclarations": [],
-                        "referencedDeclaration": 626,
+                        "referencedDeclaration": 631,
                         "src": "569:7:5",
                         "typeDescriptions": {
                           "typeIdentifier": "t_address",
@@ -540,18 +540,18 @@
                       ],
                       "expression": {
                         "argumentTypes": null,
-                        "id": 631,
+                        "id": 636,
                         "name": "super",
                         "nodeType": "Identifier",
                         "overloadedDeclarations": [],
-                        "referencedDeclaration": 1901,
+                        "referencedDeclaration": 2096,
                         "src": "548:5:5",
                         "typeDescriptions": {
-                          "typeIdentifier": "t_super$_WhiteListTokenAccess_$651",
+                          "typeIdentifier": "t_super$_WhiteListTokenAccess_$656",
                           "typeString": "contract super WhiteListTokenAccess"
                         }
                       },
-                      "id": 633,
+                      "id": 638,
                       "isConstant": false,
                       "isLValue": false,
                       "isPure": false,
@@ -565,7 +565,7 @@
                         "typeString": "function (address)"
                       }
                     },
-                    "id": 635,
+                    "id": 640,
                     "isConstant": false,
                     "isLValue": false,
                     "isPure": false,
@@ -579,27 +579,27 @@
                       "typeString": "tuple()"
                     }
                   },
-                  "id": 636,
+                  "id": 641,
                   "nodeType": "ExpressionStatement",
                   "src": "548:29:5"
                 }
               ]
             },
             "documentation": "Remove a kyc admin\n@param account the address to remove",
-            "id": 638,
+            "id": 643,
             "implemented": true,
             "kind": "function",
             "modifiers": [
               {
                 "arguments": null,
-                "id": 629,
+                "id": 634,
                 "modifierName": {
                   "argumentTypes": null,
-                  "id": 628,
+                  "id": 633,
                   "name": "onlyOwner",
                   "nodeType": "Identifier",
                   "overloadedDeclarations": [],
-                  "referencedDeclaration": 1104,
+                  "referencedDeclaration": 1295,
                   "src": "531:9:5",
                   "typeDescriptions": {
                     "typeIdentifier": "t_modifier$__$",
@@ -613,15 +613,15 @@
             "name": "removeKYCAdmin",
             "nodeType": "FunctionDefinition",
             "parameters": {
-              "id": 627,
+              "id": 632,
               "nodeType": "ParameterList",
               "parameters": [
                 {
                   "constant": false,
-                  "id": 626,
+                  "id": 631,
                   "name": "account",
                   "nodeType": "VariableDeclaration",
-                  "scope": 638,
+                  "scope": 643,
                   "src": "507:15:5",
                   "stateVariable": false,
                   "storageLocation": "default",
@@ -630,7 +630,7 @@
                     "typeString": "address"
                   },
                   "typeName": {
-                    "id": 625,
+                    "id": 630,
                     "name": "address",
                     "nodeType": "ElementaryTypeName",
                     "src": "507:7:5",
@@ -647,12 +647,12 @@
               "src": "506:17:5"
             },
             "returnParameters": {
-              "id": 630,
+              "id": 635,
               "nodeType": "ParameterList",
               "parameters": [],
               "src": "540:0:5"
             },
-            "scope": 651,
+            "scope": 656,
             "src": "483:99:5",
             "stateMutability": "nonpayable",
             "superFunction": 79,
@@ -660,7 +660,7 @@
           },
           {
             "body": {
-              "id": 649,
+              "id": 654,
               "nodeType": "Block",
               "src": "786:138:5",
               "statements": [
@@ -670,11 +670,11 @@
                     "arguments": [
                       {
                         "argumentTypes": null,
-                        "id": 646,
+                        "id": 651,
                         "name": "investorAddress",
                         "nodeType": "Identifier",
                         "overloadedDeclarations": [],
-                        "referencedDeclaration": 640,
+                        "referencedDeclaration": 645,
                         "src": "811:15:5",
                         "typeDescriptions": {
                           "typeIdentifier": "t_address",
@@ -689,7 +689,7 @@
                           "typeString": "address"
                         }
                       ],
-                      "id": 645,
+                      "id": 650,
                       "name": "isKYClisted",
                       "nodeType": "Identifier",
                       "overloadedDeclarations": [],
@@ -700,7 +700,7 @@
                         "typeString": "function (address) view returns (bool)"
                       }
                     },
-                    "id": 647,
+                    "id": 652,
                     "isConstant": false,
                     "isLValue": false,
                     "isPure": false,
@@ -714,30 +714,30 @@
                       "typeString": "bool"
                     }
                   },
-                  "functionReturnParameters": 644,
-                  "id": 648,
+                  "functionReturnParameters": 649,
+                  "id": 653,
                   "nodeType": "Return",
                   "src": "792:35:5"
                 }
               ]
             },
             "documentation": "Check if the investor is KYC approved and also accredited\n@param investorAddress the investor address",
-            "id": 650,
+            "id": 655,
             "implemented": true,
             "kind": "function",
             "modifiers": [],
             "name": "isFreeInvestor",
             "nodeType": "FunctionDefinition",
             "parameters": {
-              "id": 641,
+              "id": 646,
               "nodeType": "ParameterList",
               "parameters": [
                 {
                   "constant": false,
-                  "id": 640,
+                  "id": 645,
                   "name": "investorAddress",
                   "nodeType": "VariableDeclaration",
-                  "scope": 650,
+                  "scope": 655,
                   "src": "734:23:5",
                   "stateVariable": false,
                   "storageLocation": "default",
@@ -746,7 +746,7 @@
                     "typeString": "address"
                   },
                   "typeName": {
-                    "id": 639,
+                    "id": 644,
                     "name": "address",
                     "nodeType": "ElementaryTypeName",
                     "src": "734:7:5",
@@ -763,15 +763,15 @@
               "src": "733:25:5"
             },
             "returnParameters": {
-              "id": 644,
+              "id": 649,
               "nodeType": "ParameterList",
               "parameters": [
                 {
                   "constant": false,
-                  "id": 643,
+                  "id": 648,
                   "name": "",
                   "nodeType": "VariableDeclaration",
-                  "scope": 650,
+                  "scope": 655,
                   "src": "780:4:5",
                   "stateVariable": false,
                   "storageLocation": "default",
@@ -780,7 +780,7 @@
                     "typeString": "bool"
                   },
                   "typeName": {
-                    "id": 642,
+                    "id": 647,
                     "name": "bool",
                     "nodeType": "ElementaryTypeName",
                     "src": "780:4:5",
@@ -795,14 +795,14 @@
               ],
               "src": "779:6:5"
             },
-            "scope": 651,
+            "scope": 656,
             "src": "710:214:5",
             "stateMutability": "view",
             "superFunction": null,
             "visibility": "public"
           }
         ],
-        "scope": 652,
+        "scope": 657,
         "src": "176:750:5"
       }
     ],
@@ -812,14 +812,14 @@
     "absolutePath": "/C/Users/Noam/BCS/stellero/Dev/StellerroToken/contracts/WhiteListTokenAccess.sol",
     "exportedSymbols": {
       "WhiteListTokenAccess": [
-        651
+        656
       ]
     },
-    "id": 652,
+    "id": 657,
     "nodeType": "SourceUnit",
     "nodes": [
       {
-        "id": 604,
+        "id": 609,
         "literals": [
           "solidity",
           "^",
@@ -832,10 +832,10 @@
       {
         "absolutePath": "openzeppelin-solidity/contracts/ownership/Ownable.sol",
         "file": "openzeppelin-solidity/contracts/ownership/Ownable.sol",
-        "id": 605,
+        "id": 610,
         "nodeType": "ImportDirective",
-        "scope": 652,
-        "sourceUnit": 1171,
+        "scope": 657,
+        "sourceUnit": 1362,
         "src": "25:63:5",
         "symbolAliases": [],
         "unitAlias": ""
@@ -843,9 +843,9 @@
       {
         "absolutePath": "/C/Users/Noam/BCS/stellero/Dev/StellerroToken/contracts/KYCListedRole.sol",
         "file": "./KYCListedRole.sol",
-        "id": 606,
+        "id": 611,
         "nodeType": "ImportDirective",
-        "scope": 652,
+        "scope": 657,
         "sourceUnit": 222,
         "src": "89:29:5",
         "symbolAliases": [],
@@ -857,17 +857,17 @@
             "arguments": null,
             "baseName": {
               "contractScope": null,
-              "id": 607,
+              "id": 612,
               "name": "Ownable",
               "nodeType": "UserDefinedTypeName",
-              "referencedDeclaration": 1170,
+              "referencedDeclaration": 1361,
               "src": "209:7:5",
               "typeDescriptions": {
-                "typeIdentifier": "t_contract$_Ownable_$1170",
+                "typeIdentifier": "t_contract$_Ownable_$1361",
                 "typeString": "contract Ownable"
               }
             },
-            "id": 608,
+            "id": 613,
             "nodeType": "InheritanceSpecifier",
             "src": "209:7:5"
           },
@@ -875,7 +875,7 @@
             "arguments": null,
             "baseName": {
               "contractScope": null,
-              "id": 609,
+              "id": 614,
               "name": "KYCListedRole",
               "nodeType": "UserDefinedTypeName",
               "referencedDeclaration": 221,
@@ -885,7 +885,7 @@
                 "typeString": "contract KYCListedRole"
               }
             },
-            "id": 610,
+            "id": 615,
             "nodeType": "InheritanceSpecifier",
             "src": "218:13:5"
           }
@@ -893,24 +893,24 @@
         "contractDependencies": [
           112,
           221,
-          1170
+          1361
         ],
         "contractKind": "contract",
         "documentation": "contains roles for regular whitelisted token",
         "fullyImplemented": true,
-        "id": 651,
+        "id": 656,
         "linearizedBaseContracts": [
-          651,
+          656,
           221,
           112,
-          1170
+          1361
         ],
         "name": "WhiteListTokenAccess",
         "nodeType": "ContractDefinition",
         "nodes": [
           {
             "body": {
-              "id": 623,
+              "id": 628,
               "nodeType": "Block",
               "src": "362:39:5",
               "statements": [
@@ -920,11 +920,11 @@
                     "arguments": [
                       {
                         "argumentTypes": null,
-                        "id": 620,
+                        "id": 625,
                         "name": "account",
                         "nodeType": "Identifier",
                         "overloadedDeclarations": [],
-                        "referencedDeclaration": 612,
+                        "referencedDeclaration": 617,
                         "src": "388:7:5",
                         "typeDescriptions": {
                           "typeIdentifier": "t_address",
@@ -941,18 +941,18 @@
                       ],
                       "expression": {
                         "argumentTypes": null,
-                        "id": 617,
+                        "id": 622,
                         "name": "super",
                         "nodeType": "Identifier",
                         "overloadedDeclarations": [],
-                        "referencedDeclaration": 1901,
+                        "referencedDeclaration": 2096,
                         "src": "370:5:5",
                         "typeDescriptions": {
-                          "typeIdentifier": "t_super$_WhiteListTokenAccess_$651",
+                          "typeIdentifier": "t_super$_WhiteListTokenAccess_$656",
                           "typeString": "contract super WhiteListTokenAccess"
                         }
                       },
-                      "id": 619,
+                      "id": 624,
                       "isConstant": false,
                       "isLValue": false,
                       "isPure": false,
@@ -966,7 +966,7 @@
                         "typeString": "function (address)"
                       }
                     },
-                    "id": 621,
+                    "id": 626,
                     "isConstant": false,
                     "isLValue": false,
                     "isPure": false,
@@ -980,27 +980,27 @@
                       "typeString": "tuple()"
                     }
                   },
-                  "id": 622,
+                  "id": 627,
                   "nodeType": "ExpressionStatement",
                   "src": "370:26:5"
                 }
               ]
             },
             "documentation": "Add a kyc admin\n@param account the address to add",
-            "id": 624,
+            "id": 629,
             "implemented": true,
             "kind": "function",
             "modifiers": [
               {
                 "arguments": null,
-                "id": 615,
+                "id": 620,
                 "modifierName": {
                   "argumentTypes": null,
-                  "id": 614,
+                  "id": 619,
                   "name": "onlyOwner",
                   "nodeType": "Identifier",
                   "overloadedDeclarations": [],
-                  "referencedDeclaration": 1104,
+                  "referencedDeclaration": 1295,
                   "src": "353:9:5",
                   "typeDescriptions": {
                     "typeIdentifier": "t_modifier$__$",
@@ -1014,15 +1014,15 @@
             "name": "addKYCAdmin",
             "nodeType": "FunctionDefinition",
             "parameters": {
-              "id": 613,
+              "id": 618,
               "nodeType": "ParameterList",
               "parameters": [
                 {
                   "constant": false,
-                  "id": 612,
+                  "id": 617,
                   "name": "account",
                   "nodeType": "VariableDeclaration",
-                  "scope": 624,
+                  "scope": 629,
                   "src": "329:15:5",
                   "stateVariable": false,
                   "storageLocation": "default",
@@ -1031,7 +1031,7 @@
                     "typeString": "address"
                   },
                   "typeName": {
-                    "id": 611,
+                    "id": 616,
                     "name": "address",
                     "nodeType": "ElementaryTypeName",
                     "src": "329:7:5",
@@ -1048,12 +1048,12 @@
               "src": "328:17:5"
             },
             "returnParameters": {
-              "id": 616,
+              "id": 621,
               "nodeType": "ParameterList",
               "parameters": [],
               "src": "362:0:5"
             },
-            "scope": 651,
+            "scope": 656,
             "src": "308:93:5",
             "stateMutability": "nonpayable",
             "superFunction": 60,
@@ -1061,7 +1061,7 @@
           },
           {
             "body": {
-              "id": 637,
+              "id": 642,
               "nodeType": "Block",
               "src": "540:42:5",
               "statements": [
@@ -1071,11 +1071,11 @@
                     "arguments": [
                       {
                         "argumentTypes": null,
-                        "id": 634,
+                        "id": 639,
                         "name": "account",
                         "nodeType": "Identifier",
                         "overloadedDeclarations": [],
-                        "referencedDeclaration": 626,
+                        "referencedDeclaration": 631,
                         "src": "569:7:5",
                         "typeDescriptions": {
                           "typeIdentifier": "t_address",
@@ -1092,18 +1092,18 @@
                       ],
                       "expression": {
                         "argumentTypes": null,
-                        "id": 631,
+                        "id": 636,
                         "name": "super",
                         "nodeType": "Identifier",
                         "overloadedDeclarations": [],
-                        "referencedDeclaration": 1901,
+                        "referencedDeclaration": 2096,
                         "src": "548:5:5",
                         "typeDescriptions": {
-                          "typeIdentifier": "t_super$_WhiteListTokenAccess_$651",
+                          "typeIdentifier": "t_super$_WhiteListTokenAccess_$656",
                           "typeString": "contract super WhiteListTokenAccess"
                         }
                       },
-                      "id": 633,
+                      "id": 638,
                       "isConstant": false,
                       "isLValue": false,
                       "isPure": false,
@@ -1117,7 +1117,7 @@
                         "typeString": "function (address)"
                       }
                     },
-                    "id": 635,
+                    "id": 640,
                     "isConstant": false,
                     "isLValue": false,
                     "isPure": false,
@@ -1131,27 +1131,27 @@
                       "typeString": "tuple()"
                     }
                   },
-                  "id": 636,
+                  "id": 641,
                   "nodeType": "ExpressionStatement",
                   "src": "548:29:5"
                 }
               ]
             },
             "documentation": "Remove a kyc admin\n@param account the address to remove",
-            "id": 638,
+            "id": 643,
             "implemented": true,
             "kind": "function",
             "modifiers": [
               {
                 "arguments": null,
-                "id": 629,
+                "id": 634,
                 "modifierName": {
                   "argumentTypes": null,
-                  "id": 628,
+                  "id": 633,
                   "name": "onlyOwner",
                   "nodeType": "Identifier",
                   "overloadedDeclarations": [],
-                  "referencedDeclaration": 1104,
+                  "referencedDeclaration": 1295,
                   "src": "531:9:5",
                   "typeDescriptions": {
                     "typeIdentifier": "t_modifier$__$",
@@ -1165,15 +1165,15 @@
             "name": "removeKYCAdmin",
             "nodeType": "FunctionDefinition",
             "parameters": {
-              "id": 627,
+              "id": 632,
               "nodeType": "ParameterList",
               "parameters": [
                 {
                   "constant": false,
-                  "id": 626,
+                  "id": 631,
                   "name": "account",
                   "nodeType": "VariableDeclaration",
-                  "scope": 638,
+                  "scope": 643,
                   "src": "507:15:5",
                   "stateVariable": false,
                   "storageLocation": "default",
@@ -1182,7 +1182,7 @@
                     "typeString": "address"
                   },
                   "typeName": {
-                    "id": 625,
+                    "id": 630,
                     "name": "address",
                     "nodeType": "ElementaryTypeName",
                     "src": "507:7:5",
@@ -1199,12 +1199,12 @@
               "src": "506:17:5"
             },
             "returnParameters": {
-              "id": 630,
+              "id": 635,
               "nodeType": "ParameterList",
               "parameters": [],
               "src": "540:0:5"
             },
-            "scope": 651,
+            "scope": 656,
             "src": "483:99:5",
             "stateMutability": "nonpayable",
             "superFunction": 79,
@@ -1212,7 +1212,7 @@
           },
           {
             "body": {
-              "id": 649,
+              "id": 654,
               "nodeType": "Block",
               "src": "786:138:5",
               "statements": [
@@ -1222,11 +1222,11 @@
                     "arguments": [
                       {
                         "argumentTypes": null,
-                        "id": 646,
+                        "id": 651,
                         "name": "investorAddress",
                         "nodeType": "Identifier",
                         "overloadedDeclarations": [],
-                        "referencedDeclaration": 640,
+                        "referencedDeclaration": 645,
                         "src": "811:15:5",
                         "typeDescriptions": {
                           "typeIdentifier": "t_address",
@@ -1241,7 +1241,7 @@
                           "typeString": "address"
                         }
                       ],
-                      "id": 645,
+                      "id": 650,
                       "name": "isKYClisted",
                       "nodeType": "Identifier",
                       "overloadedDeclarations": [],
@@ -1252,7 +1252,7 @@
                         "typeString": "function (address) view returns (bool)"
                       }
                     },
-                    "id": 647,
+                    "id": 652,
                     "isConstant": false,
                     "isLValue": false,
                     "isPure": false,
@@ -1266,30 +1266,30 @@
                       "typeString": "bool"
                     }
                   },
-                  "functionReturnParameters": 644,
-                  "id": 648,
+                  "functionReturnParameters": 649,
+                  "id": 653,
                   "nodeType": "Return",
                   "src": "792:35:5"
                 }
               ]
             },
             "documentation": "Check if the investor is KYC approved and also accredited\n@param investorAddress the investor address",
-            "id": 650,
+            "id": 655,
             "implemented": true,
             "kind": "function",
             "modifiers": [],
             "name": "isFreeInvestor",
             "nodeType": "FunctionDefinition",
             "parameters": {
-              "id": 641,
+              "id": 646,
               "nodeType": "ParameterList",
               "parameters": [
                 {
                   "constant": false,
-                  "id": 640,
+                  "id": 645,
                   "name": "investorAddress",
                   "nodeType": "VariableDeclaration",
-                  "scope": 650,
+                  "scope": 655,
                   "src": "734:23:5",
                   "stateVariable": false,
                   "storageLocation": "default",
@@ -1298,7 +1298,7 @@
                     "typeString": "address"
                   },
                   "typeName": {
-                    "id": 639,
+                    "id": 644,
                     "name": "address",
                     "nodeType": "ElementaryTypeName",
                     "src": "734:7:5",
@@ -1315,15 +1315,15 @@
               "src": "733:25:5"
             },
             "returnParameters": {
-              "id": 644,
+              "id": 649,
               "nodeType": "ParameterList",
               "parameters": [
                 {
                   "constant": false,
-                  "id": 643,
+                  "id": 648,
                   "name": "",
                   "nodeType": "VariableDeclaration",
-                  "scope": 650,
+                  "scope": 655,
                   "src": "780:4:5",
                   "stateVariable": false,
                   "storageLocation": "default",
@@ -1332,7 +1332,7 @@
                     "typeString": "bool"
                   },
                   "typeName": {
-                    "id": 642,
+                    "id": 647,
                     "name": "bool",
                     "nodeType": "ElementaryTypeName",
                     "src": "780:4:5",
@@ -1347,14 +1347,14 @@
               ],
               "src": "779:6:5"
             },
-            "scope": 651,
+            "scope": 656,
             "src": "710:214:5",
             "stateMutability": "view",
             "superFunction": null,
             "visibility": "public"
           }
         ],
-        "scope": 652,
+        "scope": 657,
         "src": "176:750:5"
       }
     ],
@@ -1366,7 +1366,7 @@
   },
   "networks": {},
   "schemaVersion": "3.0.11",
-  "updatedAt": "2019-06-29T19:47:20.752Z",
+  "updatedAt": "2019-07-01T13:17:31.979Z",
   "devdoc": {
     "methods": {
       "addKYCAdmin(address)": {

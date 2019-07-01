@@ -2,12 +2,13 @@ pragma solidity ^0.5.7;
 
 import "openzeppelin-solidity/contracts/token/ERC20/ERC20Capped.sol";
 import "openzeppelin-solidity/contracts/token/ERC20/ERC20Burnable.sol";
+import "openzeppelin-solidity/contracts/lifecycle/Pausable.sol";
 import "./WhiteListTokenAccess.sol";
 
 /**
  * The token adhering a WhiteList rules.
  */
-contract WhiteListToken is WhiteListTokenAccess, ERC20Capped, ERC20Burnable{
+contract WhiteListToken is WhiteListTokenAccess, ERC20Capped, ERC20Burnable, Pausable{
 
     bool public mintingFinished = false;
 
@@ -77,6 +78,7 @@ contract WhiteListToken is WhiteListTokenAccess, ERC20Capped, ERC20Burnable{
     )
         public
         canTransfer
+        whenNotPaused
         returns (bool)
     {
         require(canInvestorBuy(to), "Buying investor is not allowed to buy");
@@ -89,7 +91,7 @@ contract WhiteListToken is WhiteListTokenAccess, ERC20Capped, ERC20Burnable{
     * @param to The address to transfer to.
     * @param value The amount to be transferred.
     */
-    function transfer(address to, uint256 value) public canTransfer returns (bool) {
+    function transfer(address to, uint256 value) public canTransfer whenNotPaused returns (bool) {
         require(canInvestorBuy(to), "Buying investor is not allowed to buy");
         require(canInvestorSell(msg.sender), "Selling investor is not allowed to sell");
         return super.transfer(to,value);
@@ -118,14 +120,14 @@ contract WhiteListToken is WhiteListTokenAccess, ERC20Capped, ERC20Burnable{
     * @param from address The old user's address
     * @param to address The new user's address
     */
-    function restoreTokens(address from, address to) onlyOwner public returns (bool)
+    function restoreTokens(address from, address to) onlyOwner whenNotPaused public returns (bool)
     {
         require(to != address(0));
 
         if(!isKYClisted(to)) {
           addKYClisted(to);
         }
-        
+
         uint256 value = balanceOf(from);
         _transfer(from, to, value);
 

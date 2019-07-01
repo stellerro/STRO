@@ -276,6 +276,45 @@ function createWhiteListTokenTest(contractCls){
                     assert.equal(ownerBalance,101);
                 });
 
+                it('no transfer if token paused',async function(){
+                    await token.pause({ from: owner });
+                    await expectThrow.expectThrow(token.transfer(otherUser,50,{ from: minter }));
+                });
+
+                it('transfer if token unpaused - success',async function(){
+                    await token.pause({ from: owner });
+                    await expectThrow.expectThrow(token.transfer(otherUser,50,{ from: minter }));
+                    await token.unpause({ from: owner });
+                    await token.transfer(otherUser,1,{ from: minter });
+
+                    let balance1 = await token.balanceOf(otherUser);
+                    let balance2 = await token.balanceOf(minter);
+                    assert.equal(balance1,102);
+                    assert.equal(balance2,199);
+                });
+
+                it('no transferFrom if token paused',async function(){
+                    await token.pause({ from: owner });
+                    let balance = await token.balanceOf(otherUser);
+                    await token.increaseAllowance(minter, balance, { from: otherUser });
+                    await expectThrow.expectThrow(token.transferFrom(otherUser,owner,1,{ from: minter }));
+                });
+
+                it('transferFrom if token unpaused - success',async function(){
+                    await token.pause({ from: owner });
+                    await expectThrow.expectThrow(token.transferFrom(otherUser,owner,1,{ from: minter }));
+                    await token.unpause({ from: owner });
+
+                    let balance = await token.balanceOf(otherUser);
+                    await token.increaseAllowance(minter, balance, { from: otherUser });
+
+                    await token.transferFrom(otherUser,owner,1,{ from: minter });
+                    balance = await token.balanceOf(otherUser);
+                    let ownerBalance = await token.balanceOf(owner);
+                    assert.equal(balance,100);
+                    assert.equal(ownerBalance,101);
+                });
+
             });
         }); //describe('transfer & mint'
 
@@ -345,6 +384,26 @@ function createWhiteListTokenTest(contractCls){
 
               assert.equal(oldAddressBalance,0);
               assert.equal(newAddressBalance,200);
+          });
+
+          it('owner cannot restore tokens if token is paused',async function(){
+              await token.pause({ from: owner });
+              await expectThrow.expectThrow(token.restoreTokens(minter, otherUser, {from:owner}));
+          });
+
+          it('restore tokens if token is unpaused - success',async function(){
+              await token.pause({ from: owner });
+              await expectThrow.expectThrow(token.restoreTokens(minter, otherUser, {from:owner}));
+              await token.unpause({ from: owner });
+
+              await token.restoreTokens(minter, otherUser, {from:owner});
+
+              let oldAddressBalance = await token.balanceOf(minter);
+              let newAddressBalance = await token.balanceOf(otherUser);
+
+              assert.equal(oldAddressBalance,0);
+              assert.equal(newAddressBalance,200);
+
           });
         });
 

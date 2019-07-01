@@ -11,7 +11,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/stelllerro/STRO.git"
+    "url": "git+https://github.com/stellerro/STRO.git"
   },
   "keywords": ["ethereum",
     "truffle",
