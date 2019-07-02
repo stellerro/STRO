@@ -260,14 +260,14 @@
     "absolutePath": "/C/Users/Noam/BCS/stellero/Dev/StellerroToken/contracts/WhiteListTokenAccess.sol",
     "exportedSymbols": {
       "WhiteListTokenAccess": [
-        656
+        660
       ]
     },
-    "id": 657,
+    "id": 661,
     "nodeType": "SourceUnit",
     "nodes": [
       {
-        "id": 609,
+        "id": 613,
         "literals": [
           "solidity",
           "^",
@@ -280,10 +280,10 @@
       {
         "absolutePath": "openzeppelin-solidity/contracts/ownership/Ownable.sol",
         "file": "openzeppelin-solidity/contracts/ownership/Ownable.sol",
-        "id": 610,
+        "id": 614,
         "nodeType": "ImportDirective",
-        "scope": 657,
-        "sourceUnit": 1362,
+        "scope": 661,
+        "sourceUnit": 1366,
         "src": "25:63:5",
         "symbolAliases": [],
         "unitAlias": ""
@@ -291,9 +291,9 @@
       {
         "absolutePath": "/C/Users/Noam/BCS/stellero/Dev/StellerroToken/contracts/KYCListedRole.sol",
         "file": "./KYCListedRole.sol",
-        "id": 611,
+        "id": 615,
         "nodeType": "ImportDirective",
-        "scope": 657,
+        "scope": 661,
         "sourceUnit": 222,
         "src": "89:29:5",
         "symbolAliases": [],
@@ -305,17 +305,17 @@
             "arguments": null,
             "baseName": {
               "contractScope": null,
-              "id": 612,
+              "id": 616,
               "name": "Ownable",
               "nodeType": "UserDefinedTypeName",
-              "referencedDeclaration": 1361,
+              "referencedDeclaration": 1365,
               "src": "209:7:5",
               "typeDescriptions": {
-                "typeIdentifier": "t_contract$_Ownable_$1361",
+                "typeIdentifier": "t_contract$_Ownable_$1365",
                 "typeString": "contract Ownable"
               }
             },
-            "id": 613,
+            "id": 617,
             "nodeType": "InheritanceSpecifier",
             "src": "209:7:5"
           },
@@ -323,7 +323,7 @@
             "arguments": null,
             "baseName": {
               "contractScope": null,
-              "id": 614,
+              "id": 618,
               "name": "KYCListedRole",
               "nodeType": "UserDefinedTypeName",
               "referencedDeclaration": 221,
@@ -333,7 +333,7 @@
                 "typeString": "contract KYCListedRole"
               }
             },
-            "id": 615,
+            "id": 619,
             "nodeType": "InheritanceSpecifier",
             "src": "218:13:5"
           }
@@ -341,24 +341,24 @@
         "contractDependencies": [
           112,
           221,
-          1361
+          1365
         ],
         "contractKind": "contract",
         "documentation": "contains roles for regular whitelisted token",
         "fullyImplemented": true,
-        "id": 656,
+        "id": 660,
         "linearizedBaseContracts": [
-          656,
+          660,
           221,
           112,
-          1361
+          1365
         ],
         "name": "WhiteListTokenAccess",
         "nodeType": "ContractDefinition",
         "nodes": [
           {
             "body": {
-              "id": 628,
+              "id": 632,
               "nodeType": "Block",
               "src": "362:39:5",
               "statements": [
@@ -368,11 +368,11 @@
                     "arguments": [
                       {
                         "argumentTypes": null,
-                        "id": 625,
+                        "id": 629,
                         "name": "account",
                         "nodeType": "Identifier",
                         "overloadedDeclarations": [],
-                        "referencedDeclaration": 617,
+                        "referencedDeclaration": 621,
                         "src": "388:7:5",
                         "typeDescriptions": {
                           "typeIdentifier": "t_address",
@@ -389,18 +389,18 @@
                       ],
                       "expression": {
                         "argumentTypes": null,
-                        "id": 622,
+                        "id": 626,
                         "name": "super",
                         "nodeType": "Identifier",
                         "overloadedDeclarations": [],
-                        "referencedDeclaration": 2096,
+                        "referencedDeclaration": 2100,
                         "src": "370:5:5",
                         "typeDescriptions": {
-                          "typeIdentifier": "t_super$_WhiteListTokenAccess_$656",
+                          "typeIdentifier": "t_super$_WhiteListTokenAccess_$660",
                           "typeString": "contract super WhiteListTokenAccess"
                         }
                       },
-                      "id": 624,
+                      "id": 628,
                       "isConstant": false,
                       "isLValue": false,
                       "isPure": false,
@@ -414,7 +414,7 @@
                         "typeString": "function (address)"
                       }
                     },
-                    "id": 626,
+                    "id": 630,
                     "isConstant": false,
                     "isLValue": false,
                     "isPure": false,
@@ -428,27 +428,27 @@
                       "typeString": "tuple()"
                     }
                   },
-                  "id": 627,
+                  "id": 631,
                   "nodeType": "ExpressionStatement",
                   "src": "370:26:5"
                 }
               ]
             },
             "documentation": "Add a kyc admin\n@param account the address to add",
-            "id": 629,
+            "id": 633,
             "implemented": true,
             "kind": "function",
             "modifiers": [
               {
                 "arguments": null,
-                "id": 620,
+                "id": 624,
                 "modifierName": {
                   "argumentTypes": null,
-                  "id": 619,
+                  "id": 623,
                   "name": "onlyOwner",
                   "nodeType": "Identifier",
                   "overloadedDeclarations": [],
-                  "referencedDeclaration": 1295,
+                  "referencedDeclaration": 1299,
                   "src": "353:9:5",
                   "typeDescriptions": {
                     "typeIdentifier": "t_modifier$__$",
@@ -462,15 +462,15 @@
             "name": "addKYCAdmin",
             "nodeType": "FunctionDefinition",
             "parameters": {
-              "id": 618,
+              "id": 622,
               "nodeType": "ParameterList",
               "parameters": [
                 {
                   "constant": false,
-                  "id": 617,
+                  "id": 621,
                   "name": "account",
                   "nodeType": "VariableDeclaration",
-                  "scope": 629,
+                  "scope": 633,
                   "src": "329:15:5",
                   "stateVariable": false,
                   "storageLocation": "default",
@@ -479,7 +479,7 @@
                     "typeString": "address"
                   },
                   "typeName": {
-                    "id": 616,
+                    "id": 620,
                     "name": "address",
                     "nodeType": "ElementaryTypeName",
                     "src": "329:7:5",
@@ -496,12 +496,12 @@
               "src": "328:17:5"
             },
             "returnParameters": {
-              "id": 621,
+              "id": 625,
               "nodeType": "ParameterList",
               "parameters": [],
               "src": "362:0:5"
             },
-            "scope": 656,
+            "scope": 660,
             "src": "308:93:5",
             "stateMutability": "nonpayable",
             "superFunction": 60,
@@ -509,7 +509,7 @@
           },
           {
             "body": {
-              "id": 642,
+              "id": 646,
               "nodeType": "Block",
               "src": "540:42:5",
               "statements": [
@@ -519,11 +519,11 @@
                     "arguments": [
                       {
                         "argumentTypes": null,
-                        "id": 639,
+                        "id": 643,
                         "name": "account",
                         "nodeType": "Identifier",
                         "overloadedDeclarations": [],
-                        "referencedDeclaration": 631,
+                        "referencedDeclaration": 635,
                         "src": "569:7:5",
                         "typeDescriptions": {
                           "typeIdentifier": "t_address",
@@ -540,18 +540,18 @@
                       ],
                       "expression": {
                         "argumentTypes": null,
-                        "id": 636,
+                        "id": 640,
                         "name": "super",
                         "nodeType": "Identifier",
                         "overloadedDeclarations": [],
-                        "referencedDeclaration": 2096,
+                        "referencedDeclaration": 2100,
                         "src": "548:5:5",
                         "typeDescriptions": {
-                          "typeIdentifier": "t_super$_WhiteListTokenAccess_$656",
+                          "typeIdentifier": "t_super$_WhiteListTokenAccess_$660",
                           "typeString": "contract super WhiteListTokenAccess"
                         }
                       },
-                      "id": 638,
+                      "id": 642,
                       "isConstant": false,
                       "isLValue": false,
                       "isPure": false,
@@ -565,7 +565,7 @@
                         "typeString": "function (address)"
                       }
                     },
-                    "id": 640,
+                    "id": 644,
                     "isConstant": false,
                     "isLValue": false,
                     "isPure": false,
@@ -579,27 +579,27 @@
                       "typeString": "tuple()"
                     }
                   },
-                  "id": 641,
+                  "id": 645,
                   "nodeType": "ExpressionStatement",
                   "src": "548:29:5"
                 }
               ]
             },
             "documentation": "Remove a kyc admin\n@param account the address to remove",
-            "id": 643,
+            "id": 647,
             "implemented": true,
             "kind": "function",
             "modifiers": [
               {
                 "arguments": null,
-                "id": 634,
+                "id": 638,
                 "modifierName": {
                   "argumentTypes": null,
-                  "id": 633,
+                  "id": 637,
                   "name": "onlyOwner",
                   "nodeType": "Identifier",
                   "overloadedDeclarations": [],
-                  "referencedDeclaration": 1295,
+                  "referencedDeclaration": 1299,
                   "src": "531:9:5",
                   "typeDescriptions": {
                     "typeIdentifier": "t_modifier$__$",
@@ -613,15 +613,15 @@
             "name": "removeKYCAdmin",
             "nodeType": "FunctionDefinition",
             "parameters": {
-              "id": 632,
+              "id": 636,
               "nodeType": "ParameterList",
               "parameters": [
                 {
                   "constant": false,
-                  "id": 631,
+                  "id": 635,
                   "name": "account",
                   "nodeType": "VariableDeclaration",
-                  "scope": 643,
+                  "scope": 647,
                   "src": "507:15:5",
                   "stateVariable": false,
                   "storageLocation": "default",
@@ -630,7 +630,7 @@
                     "typeString": "address"
                   },
                   "typeName": {
-                    "id": 630,
+                    "id": 634,
                     "name": "address",
                     "nodeType": "ElementaryTypeName",
                     "src": "507:7:5",
@@ -647,12 +647,12 @@
               "src": "506:17:5"
             },
             "returnParameters": {
-              "id": 635,
+              "id": 639,
               "nodeType": "ParameterList",
               "parameters": [],
               "src": "540:0:5"
             },
-            "scope": 656,
+            "scope": 660,
             "src": "483:99:5",
             "stateMutability": "nonpayable",
             "superFunction": 79,
@@ -660,7 +660,7 @@
           },
           {
             "body": {
-              "id": 654,
+              "id": 658,
               "nodeType": "Block",
               "src": "786:138:5",
               "statements": [
@@ -670,11 +670,11 @@
                     "arguments": [
                       {
                         "argumentTypes": null,
-                        "id": 651,
+                        "id": 655,
                         "name": "investorAddress",
                         "nodeType": "Identifier",
                         "overloadedDeclarations": [],
-                        "referencedDeclaration": 645,
+                        "referencedDeclaration": 649,
                         "src": "811:15:5",
                         "typeDescriptions": {
                           "typeIdentifier": "t_address",
@@ -689,7 +689,7 @@
                           "typeString": "address"
                         }
                       ],
-                      "id": 650,
+                      "id": 654,
                       "name": "isKYClisted",
                       "nodeType": "Identifier",
                       "overloadedDeclarations": [],
@@ -700,7 +700,7 @@
                         "typeString": "function (address) view returns (bool)"
                       }
                     },
-                    "id": 652,
+                    "id": 656,
                     "isConstant": false,
                     "isLValue": false,
                     "isPure": false,
@@ -714,30 +714,30 @@
                       "typeString": "bool"
                     }
                   },
-                  "functionReturnParameters": 649,
-                  "id": 653,
+                  "functionReturnParameters": 653,
+                  "id": 657,
                   "nodeType": "Return",
                   "src": "792:35:5"
                 }
               ]
             },
             "documentation": "Check if the investor is KYC approved and also accredited\n@param investorAddress the investor address",
-            "id": 655,
+            "id": 659,
             "implemented": true,
             "kind": "function",
             "modifiers": [],
             "name": "isFreeInvestor",
             "nodeType": "FunctionDefinition",
             "parameters": {
-              "id": 646,
+              "id": 650,
               "nodeType": "ParameterList",
               "parameters": [
                 {
                   "constant": false,
-                  "id": 645,
+                  "id": 649,
                   "name": "investorAddress",
                   "nodeType": "VariableDeclaration",
-                  "scope": 655,
+                  "scope": 659,
                   "src": "734:23:5",
                   "stateVariable": false,
                   "storageLocation": "default",
@@ -746,7 +746,7 @@
                     "typeString": "address"
                   },
                   "typeName": {
-                    "id": 644,
+                    "id": 648,
                     "name": "address",
                     "nodeType": "ElementaryTypeName",
                     "src": "734:7:5",
@@ -763,15 +763,15 @@
               "src": "733:25:5"
             },
             "returnParameters": {
-              "id": 649,
+              "id": 653,
               "nodeType": "ParameterList",
               "parameters": [
                 {
                   "constant": false,
-                  "id": 648,
+                  "id": 652,
                   "name": "",
                   "nodeType": "VariableDeclaration",
-                  "scope": 655,
+                  "scope": 659,
                   "src": "780:4:5",
                   "stateVariable": false,
                   "storageLocation": "default",
@@ -780,7 +780,7 @@
                     "typeString": "bool"
                   },
                   "typeName": {
-                    "id": 647,
+                    "id": 651,
                     "name": "bool",
                     "nodeType": "ElementaryTypeName",
                     "src": "780:4:5",
@@ -795,14 +795,14 @@
               ],
               "src": "779:6:5"
             },
-            "scope": 656,
+            "scope": 660,
             "src": "710:214:5",
             "stateMutability": "view",
             "superFunction": null,
             "visibility": "public"
           }
         ],
-        "scope": 657,
+        "scope": 661,
         "src": "176:750:5"
       }
     ],
@@ -812,14 +812,14 @@
     "absolutePath": "/C/Users/Noam/BCS/stellero/Dev/StellerroToken/contracts/WhiteListTokenAccess.sol",
     "exportedSymbols": {
       "WhiteListTokenAccess": [
-        656
+        660
       ]
     },
-    "id": 657,
+    "id": 661,
     "nodeType": "SourceUnit",
     "nodes": [
       {
-        "id": 609,
+        "id": 613,
         "literals": [
           "solidity",
           "^",
@@ -832,10 +832,10 @@
       {
         "absolutePath": "openzeppelin-solidity/contracts/ownership/Ownable.sol",
         "file": "openzeppelin-solidity/contracts/ownership/Ownable.sol",
-        "id": 610,
+        "id": 614,
         "nodeType": "ImportDirective",
-        "scope": 657,
-        "sourceUnit": 1362,
+        "scope": 661,
+        "sourceUnit": 1366,
         "src": "25:63:5",
         "symbolAliases": [],
         "unitAlias": ""
@@ -843,9 +843,9 @@
       {
         "absolutePath": "/C/Users/Noam/BCS/stellero/Dev/StellerroToken/contracts/KYCListedRole.sol",
         "file": "./KYCListedRole.sol",
-        "id": 611,
+        "id": 615,
         "nodeType": "ImportDirective",
-        "scope": 657,
+        "scope": 661,
         "sourceUnit": 222,
         "src": "89:29:5",
         "symbolAliases": [],
@@ -857,17 +857,17 @@
             "arguments": null,
             "baseName": {
               "contractScope": null,
-              "id": 612,
+              "id": 616,
               "name": "Ownable",
               "nodeType": "UserDefinedTypeName",
-              "referencedDeclaration": 1361,
+              "referencedDeclaration": 1365,
               "src": "209:7:5",
               "typeDescriptions": {
-                "typeIdentifier": "t_contract$_Ownable_$1361",
+                "typeIdentifier": "t_contract$_Ownable_$1365",
                 "typeString": "contract Ownable"
               }
             },
-            "id": 613,
+            "id": 617,
             "nodeType": "InheritanceSpecifier",
             "src": "209:7:5"
           },
@@ -875,7 +875,7 @@
             "arguments": null,
             "baseName": {
               "contractScope": null,
-              "id": 614,
+              "id": 618,
               "name": "KYCListedRole",
               "nodeType": "UserDefinedTypeName",
               "referencedDeclaration": 221,
@@ -885,7 +885,7 @@
                 "typeString": "contract KYCListedRole"
               }
             },
-            "id": 615,
+            "id": 619,
             "nodeType": "InheritanceSpecifier",
             "src": "218:13:5"
           }
@@ -893,24 +893,24 @@
         "contractDependencies": [
           112,
           221,
-          1361
+          1365
         ],
         "contractKind": "contract",
         "documentation": "contains roles for regular whitelisted token",
         "fullyImplemented": true,
-        "id": 656,
+        "id": 660,
         "linearizedBaseContracts": [
-          656,
+          660,
           221,
           112,
-          1361
+          1365
         ],
         "name": "WhiteListTokenAccess",
         "nodeType": "ContractDefinition",
         "nodes": [
           {
             "body": {
-              "id": 628,
+              "id": 632,
               "nodeType": "Block",
               "src": "362:39:5",
               "statements": [
@@ -920,11 +920,11 @@
                     "arguments": [
                       {
                         "argumentTypes": null,
-                        "id": 625,
+                        "id": 629,
                         "name": "account",
                         "nodeType": "Identifier",
                         "overloadedDeclarations": [],
-                        "referencedDeclaration": 617,
+                        "referencedDeclaration": 621,
                         "src": "388:7:5",
                         "typeDescriptions": {
                           "typeIdentifier": "t_address",
@@ -941,18 +941,18 @@
                       ],
                       "expression": {
                         "argumentTypes": null,
-                        "id": 622,
+                        "id": 626,
                         "name": "super",
                         "nodeType": "Identifier",
                         "overloadedDeclarations": [],
-                        "referencedDeclaration": 2096,
+                        "referencedDeclaration": 2100,
                         "src": "370:5:5",
                         "typeDescriptions": {
-                          "typeIdentifier": "t_super$_WhiteListTokenAccess_$656",
+                          "typeIdentifier": "t_super$_WhiteListTokenAccess_$660",
                           "typeString": "contract super WhiteListTokenAccess"
                         }
                       },
-                      "id": 624,
+                      "id": 628,
                       "isConstant": false,
                       "isLValue": false,
                       "isPure": false,
@@ -966,7 +966,7 @@
                         "typeString": "function (address)"
                       }
                     },
-                    "id": 626,
+                    "id": 630,
                     "isConstant": false,
                     "isLValue": false,
                     "isPure": false,
@@ -980,27 +980,27 @@
                       "typeString": "tuple()"
                     }
                   },
-                  "id": 627,
+                  "id": 631,
                   "nodeType": "ExpressionStatement",
                   "src": "370:26:5"
                 }
               ]
             },
             "documentation": "Add a kyc admin\n@param account the address to add",
-            "id": 629,
+            "id": 633,
             "implemented": true,
             "kind": "function",
             "modifiers": [
               {
                 "arguments": null,
-                "id": 620,
+                "id": 624,
                 "modifierName": {
                   "argumentTypes": null,
-                  "id": 619,
+                  "id": 623,
                   "name": "onlyOwner",
                   "nodeType": "Identifier",
                   "overloadedDeclarations": [],
-                  "referencedDeclaration": 1295,
+                  "referencedDeclaration": 1299,
                   "src": "353:9:5",
                   "typeDescriptions": {
                     "typeIdentifier": "t_modifier$__$",
@@ -1014,15 +1014,15 @@
             "name": "addKYCAdmin",
             "nodeType": "FunctionDefinition",
             "parameters": {
-              "id": 618,
+              "id": 622,
               "nodeType": "ParameterList",
               "parameters": [
                 {
                   "constant": false,
-                  "id": 617,
+                  "id": 621,
                   "name": "account",
                   "nodeType": "VariableDeclaration",
-                  "scope": 629,
+                  "scope": 633,
                   "src": "329:15:5",
                   "stateVariable": false,
                   "storageLocation": "default",
@@ -1031,7 +1031,7 @@
                     "typeString": "address"
                   },
                   "typeName": {
-                    "id": 616,
+                    "id": 620,
                     "name": "address",
                     "nodeType": "ElementaryTypeName",
                     "src": "329:7:5",
@@ -1048,12 +1048,12 @@
               "src": "328:17:5"
             },
             "returnParameters": {
-              "id": 621,
+              "id": 625,
               "nodeType": "ParameterList",
               "parameters": [],
               "src": "362:0:5"
             },
-            "scope": 656,
+            "scope": 660,
             "src": "308:93:5",
             "stateMutability": "nonpayable",
             "superFunction": 60,
@@ -1061,7 +1061,7 @@
           },
           {
             "body": {
-              "id": 642,
+              "id": 646,
               "nodeType": "Block",
               "src": "540:42:5",
               "statements": [
@@ -1071,11 +1071,11 @@
                     "arguments": [
                       {
                         "argumentTypes": null,
-                        "id": 639,
+                        "id": 643,
                         "name": "account",
                         "nodeType": "Identifier",
                         "overloadedDeclarations": [],
-                        "referencedDeclaration": 631,
+                        "referencedDeclaration": 635,
                         "src": "569:7:5",
                         "typeDescriptions": {
                           "typeIdentifier": "t_address",
@@ -1092,18 +1092,18 @@
                       ],
                       "expression": {
                         "argumentTypes": null,
-                        "id": 636,
+                        "id": 640,
                         "name": "super",
                         "nodeType": "Identifier",
                         "overloadedDeclarations": [],
-                        "referencedDeclaration": 2096,
+                        "referencedDeclaration": 2100,
                         "src": "548:5:5",
                         "typeDescriptions": {
-                          "typeIdentifier": "t_super$_WhiteListTokenAccess_$656",
+                          "typeIdentifier": "t_super$_WhiteListTokenAccess_$660",
                           "typeString": "contract super WhiteListTokenAccess"
                         }
                       },
-                      "id": 638,
+                      "id": 642,
                       "isConstant": false,
                       "isLValue": false,
                       "isPure": false,
@@ -1117,7 +1117,7 @@
                         "typeString": "function (address)"
                       }
                     },
-                    "id": 640,
+                    "id": 644,
                     "isConstant": false,
                     "isLValue": false,
                     "isPure": false,
@@ -1131,27 +1131,27 @@
                       "typeString": "tuple()"
                     }
                   },
-                  "id": 641,
+                  "id": 645,
                   "nodeType": "ExpressionStatement",
                   "src": "548:29:5"
                 }
               ]
             },
             "documentation": "Remove a kyc admin\n@param account the address to remove",
-            "id": 643,
+            "id": 647,
             "implemented": true,
             "kind": "function",
             "modifiers": [
               {
                 "arguments": null,
-                "id": 634,
+                "id": 638,
                 "modifierName": {
                   "argumentTypes": null,
-                  "id": 633,
+                  "id": 637,
                   "name": "onlyOwner",
                   "nodeType": "Identifier",
                   "overloadedDeclarations": [],
-                  "referencedDeclaration": 1295,
+                  "referencedDeclaration": 1299,
                   "src": "531:9:5",
                   "typeDescriptions": {
                     "typeIdentifier": "t_modifier$__$",
@@ -1165,15 +1165,15 @@
             "name": "removeKYCAdmin",
             "nodeType": "FunctionDefinition",
             "parameters": {
-              "id": 632,
+              "id": 636,
               "nodeType": "ParameterList",
               "parameters": [
                 {
                   "constant": false,
-                  "id": 631,
+                  "id": 635,
                   "name": "account",
                   "nodeType": "VariableDeclaration",
-                  "scope": 643,
+                  "scope": 647,
                   "src": "507:15:5",
                   "stateVariable": false,
                   "storageLocation": "default",
@@ -1182,7 +1182,7 @@
                     "typeString": "address"
                   },
                   "typeName": {
-                    "id": 630,
+                    "id": 634,
                     "name": "address",
                     "nodeType": "ElementaryTypeName",
                     "src": "507:7:5",
@@ -1199,12 +1199,12 @@
               "src": "506:17:5"
             },
             "returnParameters": {
-              "id": 635,
+              "id": 639,
               "nodeType": "ParameterList",
               "parameters": [],
               "src": "540:0:5"
             },
-            "scope": 656,
+            "scope": 660,
             "src": "483:99:5",
             "stateMutability": "nonpayable",
             "superFunction": 79,
@@ -1212,7 +1212,7 @@
           },
           {
             "body": {
-              "id": 654,
+              "id": 658,
               "nodeType": "Block",
               "src": "786:138:5",
               "statements": [
@@ -1222,11 +1222,11 @@
                     "arguments": [
                       {
                         "argumentTypes": null,
-                        "id": 651,
+                        "id": 655,
                         "name": "investorAddress",
                         "nodeType": "Identifier",
                         "overloadedDeclarations": [],
-                        "referencedDeclaration": 645,
+                        "referencedDeclaration": 649,
                         "src": "811:15:5",
                         "typeDescriptions": {
                           "typeIdentifier": "t_address",
@@ -1241,7 +1241,7 @@
                           "typeString": "address"
                         }
                       ],
-                      "id": 650,
+                      "id": 654,
                       "name": "isKYClisted",
                       "nodeType": "Identifier",
                       "overloadedDeclarations": [],
@@ -1252,7 +1252,7 @@
                         "typeString": "function (address) view returns (bool)"
                       }
                     },
-                    "id": 652,
+                    "id": 656,
                     "isConstant": false,
                     "isLValue": false,
                     "isPure": false,
@@ -1266,30 +1266,30 @@
                       "typeString": "bool"
                     }
                   },
-                  "functionReturnParameters": 649,
-                  "id": 653,
+                  "functionReturnParameters": 653,
+                  "id": 657,
                   "nodeType": "Return",
                   "src": "792:35:5"
                 }
               ]
             },
             "documentation": "Check if the investor is KYC approved and also accredited\n@param investorAddress the investor address",
-            "id": 655,
+            "id": 659,
             "implemented": true,
             "kind": "function",
             "modifiers": [],
             "name": "isFreeInvestor",
             "nodeType": "FunctionDefinition",
             "parameters": {
-              "id": 646,
+              "id": 650,
               "nodeType": "ParameterList",
               "parameters": [
                 {
                   "constant": false,
-                  "id": 645,
+                  "id": 649,
                   "name": "investorAddress",
                   "nodeType": "VariableDeclaration",
-                  "scope": 655,
+                  "scope": 659,
                   "src": "734:23:5",
                   "stateVariable": false,
                   "storageLocation": "default",
@@ -1298,7 +1298,7 @@
                     "typeString": "address"
                   },
                   "typeName": {
-                    "id": 644,
+                    "id": 648,
                     "name": "address",
                     "nodeType": "ElementaryTypeName",
                     "src": "734:7:5",
@@ -1315,15 +1315,15 @@
               "src": "733:25:5"
             },
             "returnParameters": {
-              "id": 649,
+              "id": 653,
               "nodeType": "ParameterList",
               "parameters": [
                 {
                   "constant": false,
-                  "id": 648,
+                  "id": 652,
                   "name": "",
                   "nodeType": "VariableDeclaration",
-                  "scope": 655,
+                  "scope": 659,
                   "src": "780:4:5",
                   "stateVariable": false,
                   "storageLocation": "default",
@@ -1332,7 +1332,7 @@
                     "typeString": "bool"
                   },
                   "typeName": {
-                    "id": 647,
+                    "id": 651,
                     "name": "bool",
                     "nodeType": "ElementaryTypeName",
                     "src": "780:4:5",
@@ -1347,14 +1347,14 @@
               ],
               "src": "779:6:5"
             },
-            "scope": 656,
+            "scope": 660,
             "src": "710:214:5",
             "stateMutability": "view",
             "superFunction": null,
             "visibility": "public"
           }
         ],
-        "scope": 657,
+        "scope": 661,
         "src": "176:750:5"
       }
     ],
@@ -1366,7 +1366,7 @@
   },
   "networks": {},
   "schemaVersion": "3.0.11",
-  "updatedAt": "2019-07-01T13:17:31.979Z",
+  "updatedAt": "2019-07-02T09:24:42.033Z",
   "devdoc": {
     "methods": {
       "addKYCAdmin(address)": {

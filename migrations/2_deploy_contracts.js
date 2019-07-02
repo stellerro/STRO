@@ -1,6 +1,6 @@
 let WhiteListTokenAccess = artifacts.require("./WhiteListTokenAccess.sol");
 let WhiteListToken = artifacts.require("./WhiteListToken.sol");
-let StellerroESToken = artifacts.require("./StellerroESToken.sol");
+let StellerroToken = artifacts.require("./StellerroToken.sol");
 
 module.exports = async (deployer, network, accounts) => {
 
@@ -13,7 +13,7 @@ module.exports = async (deployer, network, accounts) => {
 
   }else{
     let admin = accounts[0];
-    deployer.deploy(StellerroESToken,8000000,'Stellerro spain token', 'STRO', 0);
+    deployer.deploy(StellerroToken,8000000,'Stellerro spain token', 'STRO', 0);
   }
 
 }
